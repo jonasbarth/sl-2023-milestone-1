@@ -16,7 +16,7 @@ jobs:
         run: Rscript install_packages.r
       - name: Render my document to html
         run: Rscript -e 'rmarkdown::render("statlearn_1st_template.Rmd", output_format = "pdf_document")'
-      - name: Archive code coverage results
+      - name: Archive rendered file
         uses: actions/upload-artifact@v3
         with:
           name: statlearn_1st_template
