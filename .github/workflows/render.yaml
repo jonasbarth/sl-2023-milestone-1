@@ -1,4 +1,4 @@
-name: Render documents with rmarkdown-action
+name: Render to PDF
 on: [push, workflow_dispatch]
 jobs:
   render_document:
@@ -13,7 +13,7 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@v2
       - uses: r-lib/actions/setup-tinytex@v2
       - name: install rmarkdown
-        run: Rscript install_packages.R
+        run: Rscript install_packages.r
       - name: Render my document to html
         run: Rscript -e 'rmarkdown::render("statlearn_1st_template.Rmd", output_format = "pdf_document")'
       - name: Archive code coverage results
