@@ -1,0 +1,23 @@
+name: Render documents with rmarkdown-action
+on: [push, workflow_dispatch]
+jobs:
+  render_document:
+    environment: 
+      name: Build rmd
+    env:
+      GITHUB_TOKEN: ${{ secrets.ACTION_ACCESS_TOKEN }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: r-lib/actions/setup-r@v2
+      - uses: r-lib/actions/setup-pandoc@v2
+      - uses: r-lib/actions/setup-tinytex@v2
+      - name: install rmarkdown
+        run: Rscript install_packages.R
+      - name: Render my document to html
+        run: Rscript -e 'rmarkdown::render("statlearn_1st_template.Rmd", output_format = "pdf_document")'
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: statlearn_1st_template
+          path: statlearn_1st_template.pdf
