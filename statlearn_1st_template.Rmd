@@ -62,7 +62,11 @@ and how you came up with this idea. If there are also secondary goals, list them
 help in understading the feasibility and relevance of your work.
 List all the references in the last Section of this document.*
 
-The main goal of this project is to predict the amount of **accumulated delay** on a public transport route operated by ATAC in the city of Rome. Public transport in Rome is notoriously underdeveloped and faces many problems from procurement corruption [@de_santis_2022] to spontaneously combusting buses [@agi_2021] and Russian hacker attacks [@russian_hacker_roma_today_2023]. Still, hundreds of thousands of Romans rely on ATAC and its busses, trams, and metros to get them to their destinations, every day. 
+The main goal of this project is to predict the amount of **accumulated delay** on a public transport route operated by ATAC in the city of Rome. 
+
+Public transport in Rome is notoriously underdeveloped and faces many problems from procurement corruption [@de_santis_2022] to spontaneously combusting buses [@agi_2021] and Russian hacker attacks [@russian_hacker_roma_today_2023]. Still, hundreds of thousands of Romans rely on ATAC and its busses, trams, and metros to get them to their destinations, every day. On those journeys, delays are another major problem that ATAC riders have to deal with on a daily basis. Delays reduce the ability to plan ones day and are cause for much nuisance. For that reason, knowing how much delay to expect on a specific route would be beneficial for the user of ATAC services, as it would enable them to at adjust their schedules or choose alternative transport means.
+
+Public transport delay forecasting is a challenge that has enjoyed some attention [@heppe_liebig_2017; @rodriguez_villani_2022; @yap_cats_2020; @fabrikant_2019; @peters_emig_jung_schmidt_2005] and remains a relevant problem, especially as public transport systems have been identified as a main sector of action to reach the objectives of the European Green Deal [@ec_sustainable_travel_2021] and are bound to receive more attention and investment.
 
 ----------
 
