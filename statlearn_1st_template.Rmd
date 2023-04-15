@@ -2,6 +2,9 @@
 title: "Statistical Learning Project"
 author: "1st Milestone"
 date: "Group ID and List of Group Members"
+bibliography: refs.bib
+link-citations: yes
+csl: ieee.csl
 output: pdf_document
 urlcolor: magenta
 linkcolor: cyan
@@ -58,6 +61,8 @@ and how you came up with this idea. If there are also secondary goals, list them
 *Please cite any paper, webpage, video, other kind of support material that 
 help in understading the feasibility and relevance of your work.
 List all the references in the last Section of this document.*
+
+The main goal of this project is to predict the amount of **accumulated delay** on a public transport route operated by ATAC in the city of Rome. Public transport in Rome is notoriously underdeveloped and faces many problems from procurement corruption [@de_santis_2022] to spontaneously combusting buses [@agi_2021] and Russian hacker attacks [@russian_hacker_roma_today_2023]. Still, hundreds of thousands of Romans rely on ATAC and its busses, trams, and metros to get them to their destinations, every day. 
 
 ----------
 
